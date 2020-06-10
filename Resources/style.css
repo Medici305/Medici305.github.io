@@ -97,8 +97,38 @@ nav a:hover {
 .tea-of-month {
     grid-row: 3 / 4;
     grid-column: 3 / 6;
-    border: 3px solid seashell;
-    background-color: red;
+}
+
+.tea {
+   position: relative;
+   top: 30px;
+   line-height: 50px;
+}
+
+.box {
+    position: relative;
+    top: 30px;
+    height: 565px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.boxes {
+    height: 250px;
+    position: relative;
+    top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pic {
+    width: 300px;
+    height: 200px;
+}
+.desc {
+    position: relative;
+    top: 10px;
 }
 
 /* Locations Section */
