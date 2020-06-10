@@ -21,14 +21,50 @@
     grid: 69px 700px 700px 500px 200px 40px / 1fr 100px 200px 600px 200px 100px 1fr;       
     text-align: center;          
 }
-
-.head {
+/* Header and Navigation */
+header {
     grid-row: 1 / 2;
     grid-column: 1 / 8;
-    border: 3px solid seashell;
-    background-color: red;
+    border-bottom: 1px solid seashell;
 }
 
+.sign {
+    height: 50px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 9.5px;
+}
+
+nav {
+    float: right;
+
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 25px;
+    padding: 21px 0;
+}
+
+nav a {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all ease-in-out 400ms;
+}
+
+nav a:hover {
+    color: rgb(11, 107, 190);
+}
+
+/* Banner Section */
 .banner {
     grid-row: 2 / 3;
     grid-column: 2 / 7;
@@ -36,6 +72,7 @@
     background-color: red;
 }
 
+/* Tea Of The Month Section */
 .tea-of-month {
     grid-row: 3 / 4;
     grid-column: 3 / 6;
@@ -43,6 +80,7 @@
     background-color: red;
 }
 
+/* Locations Section */
 .locations {
     grid-row: 4 / 5;
     grid-column: 2 / 7;
@@ -50,6 +88,7 @@
     background-color: red;
 }
 
+/* Contact Information Section */
 .contact {
     grid-row: 5 / 6;
     grid-column: 4 / 5;
@@ -57,32 +96,10 @@
     background-color: red;
 }
 
+/* Footer Section */
 footer {
     grid-row: 6 / 7;
     grid-column: 1 / 8;
     border: 3px solid seashell;
     background-color: red;
 }
-
-/*
-.sign {
-    height: 50px;
-    display: inline-block;
-}
-
-ul {
-    list-style-type: none;
-    background-color: white;
-    float: right;
-}
-
-li{
-    text-decoration: none;
-    display: inline;
-}
-
-a {
-    display: inline;
-}
-
-*/
