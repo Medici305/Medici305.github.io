@@ -1,6 +1,5 @@
 * {
     font-family: Helvetica;
-    font-size: 22px;
     color: seashell;
     background-color: black;
     opacity: 0.9;
@@ -10,6 +9,9 @@
     z-index: -1;
 }
 
+html {
+    font-size: 22px;
+}
 
 .container {
     display: grid;
@@ -68,8 +70,27 @@ nav a:hover {
 .banner {
     grid-row: 2 / 3;
     grid-column: 2 / 7;
-    border: 3px solid seashell;
-    background-color: red;
+    background-image: url(./Images/6_Mission-Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid: 5fr 1fr 1fr 5fr / 1fr;
+}
+
+.mission {
+    text-align: center;  
+    line-height: 58px;
+    align-self: center;
+    opacity: 1;
+}
+
+.top {
+    grid-row: 2 / 3;
+    font-size: 1.7rem;
+}
+
+.bottom {
+    grid-row: 3 / 4;
 }
 
 /* Tea Of The Month Section */
