@@ -10,184 +10,79 @@
     z-index: -1;
 }
 
-/* Container */
+
 .container {
-    height: 69px;
+    display: grid;
     width: 100%;
-    border-bottom: 1px solid seashell;
-    position: fixed;
-    z-index: 2;
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    grid-gap: 20px;
+    grid: 69px 700px 700px 500px 200px 40px / 1fr 100px 200px 600px 200px 100px 1fr;       
+    text-align: center;          
 }
 
-/* Item 1 (logo) */
-.header {
-    display: inline;
-    z-index: 2;
+.head {
+    grid-row: 1 / 2;
+    grid-column: 1 / 8;
+    border: 3px solid seashell;
+    background-color: red;
 }
 
-.logo {
-    margin-left: 10px;
+.banner {
+    grid-row: 2 / 3;
+    grid-column: 2 / 7;
+    border: 3px solid seashell;
+    background-color: red;
+}
+
+.tea-of-month {
+    grid-row: 3 / 4;
+    grid-column: 3 / 6;
+    border: 3px solid seashell;
+    background-color: red;
+}
+
+.locations {
+    grid-row: 4 / 5;
+    grid-column: 2 / 7;
+    border: 3px solid seashell;
+    background-color: red;
+}
+
+.contact {
+    grid-row: 5 / 6;
+    grid-column: 4 / 5;
+    border: 3px solid seashell;
+    background-color: red;
+}
+
+footer {
+    grid-row: 6 / 7;
+    grid-column: 1 / 8;
+    border: 3px solid seashell;
+    background-color: red;
+}
+
+/*
+.sign {
     height: 50px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-/*Item 2 (navbar) */
-.navbar {
-    float: right;
-    line-height: 65px;
-}
-
-.navbar li {
-    display: inline;
-}
-
-.navbar a {
-    margin: 0 10px;
-    transition: background-color 1.7s ease-in 200ms, color 1.5s ease-out;
-}
-
-.navbar a:hover {
-    background-color: beige;
-    color: black;
-}
-
-/* Our Mission */
-.introduction {
-    position: relative;
-    top: 70px;
-    height: 700px;
-    width: 86%;
-    margin: 0 auto;
-    background-image: url(./Images/6_Mission-Background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}  
-
-/* Title */
-.ourmission {
-    text-align: center;
-    line-height: 50px;
-    opacity: 1;
-    background-color:black;
-    width: 1200px;
-    position: relative;
-    top: 300px;
-}
-
-.ourmission h2 {
-    font-size: 1.5em;
-}
-
-/* Tea of the Month*/
-
-.tea {
-    line-height: 50px;
-    text-align: center;
-    position: relative;
-    top: 150px;
-}
-
-.tea h2{
-    font-size: 1.5em;
-}
-
-/* 5 Images of snack */
-.box {
-    display: flex;
-    flex-flow: wrap row;
-    width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    position: relative;
-    top: 120px;
-    justify-content: center;
-    z-index: -2;
-}
-
-.gallery img {
-    width: 300px;
-    height: 200px;
-    margin-bottom: 10px;
-    margin-right: 13px;
-    margin-top: 30px;
-}
-
-.gallery h2{
-    margin-right: 5px;
-    width: 96%;
-    text-align: center;
-
-}
-
-/* Location container */
-.setting {
-    background-image: url(./Images/5_Locations-Background.jpg);
-    background-size: cover;
-    width: 80%;
-    margin: 0 auto;
-    height: 500px;
-    position: relative;
-    top: 160px;
-}
-
-.seal {
-    height: 500px;
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
-    bottom: 340px;
-    background-color: rgba(0, 0, 0, 0);
-    text-align: center;
-
-}
-
-.coffee {
-    text-align: center;
-    font-weight: 600;
-    font-size: 2em;
-    background-color: rgba(0, 0, 0, 0);
-    position: relative;
-    top: 50px;
-}
-
-.address {
-    background-color: rgba(0, 0, 0, 1);
-    width: 300px;
-    height: 250px;
-    margin: 0 20px;
     display: inline-block;
-    opacity: 1;
-    position: relative;
-    top: 70px;
-    line-height: 60px;
 }
 
-/* Contact info */
-.enter {
-    height: 200px;
-    position: relative;
-    bottom: 320px;
-    text-align: center;
-    line-height: 65px;
+ul {
+    list-style-type: none;
+    background-color: white;
+    float: right;
 }
 
-.enter h1 {
-    font-size: 1.5em;
+li{
+    text-decoration: none;
+    display: inline;
 }
 
-.enter .text {
-    font-size: 0.8em;
-    font-weight: 700;
+a {
+    display: inline;
 }
 
-/* Footer */
-.end {
-    height: 50px;
-    margin-left: 20px;
-    text-align: left;
-    position: relative;
-    bottom: 300px;
-    font-size: 0.9em;
-    font-weight: 700;
-}
+*/
